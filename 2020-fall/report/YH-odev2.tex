@@ -1,0 +1,480 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{csvsimple}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{placeins}
+
+\graphicspath{ {./graphics/} }
+\geometry{a4paper, top=2cm, bottom=1cm, hmargin=2.3cm,  includehead, includefoot}
+
+\begin{document}
+    \title{\textbf{Emek Ekonomisi Ödev-2 Çözümleri} \par 
+     Ceritoğlu vd. (2017) Makale Replikasyonu}
+    \author{Yasemin Hayırlı}
+    \date{14 Ocak 2021}
+    \maketitle
+
+\subsection*{Makale Özeti ve Tanımlayıcı İstatistikler}
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0.3em}
+
+    \subparagraph{Makale Özeti} 
+    \begin{justify}
+    \setlength{\parindent}{0em}
+        2011 yılında başlayan Arap Baharı, milyonlarca Suriyelinin komşu ülkelere 
+        iltica etmesine yol açmıştır. Özellikle MENA bölgesi ve Türkiye, Suriyeli 
+        mültecilerin büyük kısmına ev sahipliği yapmıştır. Türkiye özelinde Suriyeli 
+        mültecilerin farklı bölgelere göçü, doğal bir deney olarak ele alınmış ve bu 
+        deneyden yararlanarak Ceritoğlu vd.(2017) Suriyeli mültecilerin Türkiye'de 
+        yerel emek piyasasında yarattığı etkiyi farkların farkı metodu ile
+        belirlemeye çalışmışlardır. 
+
+        Suriyeli mültecilerin Türkiye'ye kitlesel akını, 2012 yılında başlamıştır.
+        Bu nedenle çalışmada müdahale etkisinin başlangıç tarihi 1 Ocak 2012 olarak
+        alınmış ve bu tarih referans alınarak müdahale öncesi ve müdahale sonrası
+        dönem belirlenmiştir. Bu doğrultuda 2010-2011 yılları arasındaki dönem müdahale 
+        öncesindeki periyodu, 2012-2013 yılları arasındaki dönem müdahale sonrasındaki 
+        periyodu oluşturmaktadır. Müdahalenin yapıldığı bölgeler ise mültecilerin toplam
+        nüfusa göre oranına bakılarak belirlenmiştir. Özellikle Türkiye hükümeti tarafından
+        kurulan mülteci kamplarının yer aldığı iller ve çevresine odaklanmışlardır.
+        Suriyeli mültecilerin toplam nüfusa oranının \%2'den yüksek olduğu bölgeler, 
+        deney grubunu; \%2'den daha az olduğu bölgeler ise kontrol grubunu oluşturmaktadır. 
+        Ayrıca deney ve kontrol grupları seçilirken bu iki grubun kültürel, ekonomik,
+        sosyo-demografik açıdan benzer olmasına dikkat edilmiştir. Müdahale grubu, NUTS2
+        sınıflamasına göre Adana, Hatay, Gaziantep, Şanlıurfa ve Mardin bögelerini;
+        deney grubu ise Erzurum, Ağrı, Malatya ve Van bölgelerini kapsamaktadır.
+
+        Ceritoğlu vd.(2017) çalışmalarında veri seti olarak Hanehalkı İşgücü Anketlerinin
+        2010, 2011, 2012 ve 2013 yıllarına ait gözlemlerini kullanmışlardır. Seçilen örneklem
+        sadece 15-64 yaş aralığındaki yerli emek gücünü kapsamaktadır. Bu doğrultuda 
+        yurtdışında doğup 2010 yılından sonra Türkiye'ye giriş yapan bireyler analize dahil edilmemiştir.
+        Örneklem bu hali ile \textit{354.023} adet gözlem içermektedir.
+    \end{justify}
+
+
+    \newpage
+
+    \subparagraph{Tanımlayıcı İstatistikler}
+    \begin{justify}
+        Tablo 1 deney ve kontrol gruplarında yer alan bireylerin sosyal ve demografik 
+        özelliklerini göstermektedir. Gruplara ait özellikler birbirine oldukça yakındır.
+        Ayrıca gruplar bazında 2010-2013 yılları arasında büyük bir değişime de rastlanılmamıştır.
+        Bu açıdan farkların farkı metodunun kullanılabilmesi için gerekli olan 
+        \textit{"Paralel Trendler Varsayımı"} gerçekleşmiş olmaktadır. 
+
+        \FloatBarrier
+        \begin{table}[h]
+            \centering
+            \caption{Yerel Nüfus İçin Demografik İstatistikler}
+            \begin{tabular}{|llllll|}
+            \hline
+                 & \multicolumn{2}{|c|}{Müdahale Öncesi} & \multicolumn{2}{|c|}{Müdahale Sonrası} &\\
+                 & 2010 & 2011 & 2012 & 2013 & Toplam \\ \hline
+                \multicolumn{6}{|c|}{Deney Grubu}\\ \hline
+                Erkek  & 0,481 & 0,482 & 0,48 & 0,48 & 0,481 \\ 
+                Yaş & 34,5 & 34,9 & 35,2 & 35,6 & 35 \\ 
+                Evli & 0,645 & 0,64 & 0,635 & 0,638 & 0,64 \\ 
+                Lise ve Üstü & 0,112 & 0,123 & 0,131 & 0,141 & 0,234 \\ 
+                Şehirleşme & 0,729 & 0,743 & 0,74 & 0,752 & 0,741 \\ 
+                Gözlem Sayısı & 58143 & 56382 & 56167 & 54656 & 225348 \\ \hline 
+                \multicolumn{6}{|c|}{Kontrol Grubu}\\ \hline
+                Erkek  & 0,479 & 0,489 & 0,491 & 0,49 & 0,487 \\
+                Yaş & 34,3 & 34,2 & 34,5 & 34,4 & 34.2 \\ 
+                Evli & 0,643 & 0,635 & 0,633 & 0,628 & 0,635 \\ 
+                Lise ve Üstü & 0,116 & 0,128 & 0,144 & 0,139 & 0,239 \\ 
+                Şehirleşme & 0,532 & 0,509 & 0,512 & 0,525 & 0,52 \\ 
+                Gözlem Sayısı & 33646 & 32614 & 31127 & 31288 & 128675 \\ \hline
+            \end{tabular}
+        \end{table}
+        \FloatBarrier
+
+        Yerli nüfusun işgücü istatistikleri ise Tablo 2'de gösterilmiştir. Müdahale ve kontrol 
+        gruplarının birbirinden çok farklı olmadığı görülmektedir.
+
+
+
+        \FloatBarrier
+        \begin{table}[h]
+            \centering
+            \caption{Yerel Nüfus İçin İşgücü İstatistikleri}
+            \begin{tabular}{|cccccc|}
+            \hline
+                 & \multicolumn{2}{|c|}{Müdahale Öncesi} & \multicolumn{2}{|c|}{Müdahale Sonrası} &\\
+                 & 2010 & 2011 & 2012 & 2013 & Toplam \\ \hline
+                \multicolumn{6}{|c|}{Deney Grubu}\\ \hline  
+                Toplam İstihdam Oranı  & 0,406 & 0,409 & 0,396 & 0,406 & 0,404 \\  
+                Kayıtlı İstihdam Oranı & 0,172 & 0,181 & 0,192 & 0,211 & 0,189 \\ 
+                Kayıtsız İstihdam Oranı & 0,234 & 0,227 & 0,204 & 0,195 & 0,215 \\ 
+                İşsizlik Oranı & 0,068 & 0,054 & 0,051 & 0,064 & 0,059 \\ 
+                İş Gücüne Katılım Oranı & 0,474 & 0,462 & 0,447 & 0,470 & 0,463 \\
+                İşten Ayrılma Olasılığı & 0,015 & 0,012 & 0,013 & 0,018 & 0,014 \\ \hline
+                \multicolumn{6}{|c|}{Kontrol Grubu}\\ \hline
+                Toplam İstihdam Oranı  & 0,446 & 0,468 & 0,479 & 0,500 & 0,473 \\
+                Kayıtlı İstihdam Oranı & 0,156 & 0,171 & 0,184 & 0,191 & 0,175 \\ 
+                Kayıtsız İstihdam Oranı & 0,290 & 0,298 & 0,295 & 0,309 & 0,298\\ 
+                İşsizlik Oranı & 0,062 & 0,054 & 0,043 & 0,046 & 0,062 \\ 
+                İş Gücüne Katılım Oranı & 0,508 & 0,522 & 0,522 & 0,474 & 0,524 \\
+                İşten Ayrılma Olasılığı & 0,012 & 0,011 & 0,011 & 0,012 & 0,011 \\ \hline
+            \end{tabular}
+        \end{table}
+        \FloatBarrier
+    \end{justify}
+    
+    \newpage
+
+    \subsection*{Ekonometrik Yöntem ve Analiz Sonuçları}
+    \setlength{\parindent}{0em}
+    \setlength{\parskip}{0.3em}
+
+    \subparagraph{Ekonometrik Yöntem} 
+    \begin{justify}
+    \setlength{\parindent}{0em}
+    Farkların farkı yöntemi, müdahaleye maruz kalan grup ile müdahaleden etkilenmeyen grup 
+    arasında zaman içinde meydana gelen değişiklikleri karşılaştırmayı sağlayan yarı deneysel bir 
+    analiz metodur. Ceritoğlu vd.(2017) çalışmalarında Suriyeli mültecilerin Türkiye'ye zoraki 
+    göçünü yarı deney olarak ele almışlar ve 2010-2013 yılı arasında Türkiye'de emek piyasasında
+    nasıl değişimler yaşandığını analiz etmişlerdir. Müdahale grubu ve kontrol grubu seçilirken
+    Suriyeli mültecilerin toplam nüfusa oranı baz alınmıştır. Buna göre Suriyeli mültecilerin 
+    toplam nüfusa oranının \%2'nin yukarısında olduğu bölgeler müdahale grubunu, \%2'nin aşağısında
+    olan bölgeler ise kontrol grubunu oluşturmaktadır. Ayrıca seçilen gruplar ekonomik, sosyo-kültürel,
+    demografik vb. açılardan birbirine benzerdir. Mülteci etkisi aşağıda yer alan regresyon modeli 
+    aracılığıyla tahmin edilmiştir.
+
+    \[ Y_{ijt} = \alpha + \beta (R_i x T_i) + \theta^t X_{ijt} +
+    \sum_{j=1}^{8}\beta_j BOLGE_j + \sum_{i=2010}^{2012}\beta_i YIL_{i} + \kappa Z_{jt} + \epsilon_{ijt}  \]
+    
+    Mülteci etkisi, müdahalenin yapıldığı yıl olan 2012 ve 2013'te deney (müdahale) grubu olarak seçilen 
+    bölgede ortaya çıkmaktadır.
+    Bu etkinin belirlenmesi için yıllara ve bölgelere göre müdahalenin gerçekleşip gerçekleşmediğini 
+    gösteren kukla değişkenler oluşturulmuştur. Modelde yer alan $T$ kukla değişkeni, 2010 ve 2011
+    yılları için 0, 2012 ve 2013 yılları için ise 1 değerini; $R$ kukla değişkeni ise 
+    müdahalenin uygulandığı bölgeler için 1, kontrol grubu olarak seçilen bölgeler için 0 değerini
+    almaktadır. Bu değişkenlerin aynı anda 1 değerini aldığını gösteren etkileşim teriminin katsayısı 
+    $\beta$, mülteci etkisini vermektedir.
+    
+    Regresyon modelinde yer alan $Y_{ijt}$ bağımlı değişkendir. Çalışmada bağımlı değişken olarak
+    kayıtlı ve kayıtsız istihdam oranı, iş gücüne katılım oranı, işsizlerin oranı, iş ayrımı ve iş 
+    bulma olasılıkları ve aylık ortalama reel ücret geliri kullanılmıştır. Ayrıca çalışmada mülteci 
+    etkisinin yaşlara göre nasıl değiştiği de tahmin edilmiştir.
+    
+    Modelde yer alan $i,j$ ve $t$ endeksleri sırasıyla bireyleri, bölgeleri ve yılları temsil etmektedir.
+    $X_{ijt}$ ise bireylerin gözlemlenen özelliklerinden oluşan vektördür. Bu bağlamda modele bireylerin
+    yaşları, medeni durumları ve eğitim seviyeleri ve işgücüne dair bazı özellikleri dahil edilmiştir. 
+    Ayrıca müdahale grubu, kontrol grubuna göre biraz daha fazla şehirleştiği için bu durum kontrol edilmek 
+    istenmiş, bu amaçla modele bölgelerin şehirleşme seviyelerini nüfus bazında gösteren değişken modele eklenmiştir.
+
+    Müdahale bölgesinde ekonomik aktivitenin bir kısmının Suriye ile yapılan ticarete bağlı olması ihtimali 
+    göz önünde bulundurularak, modele ayrıca bölgelerin toplam dış ticaret hacmini gösteren $Z_{jt}$
+    değişkeni dahil edilmiştir. Böylece Suriye iç savaşı nedeniyle müdahale bölgesinde yaşanan ticari daralma
+    kontrol edilmiştir. 
+
+    Modelde yıllara ve bölgelere göre sabit etkileri konrol edebilmek için düzeltilmiş yıl ve bölge 
+    değişkenleri kullanılmıştır. Yıl ve bölgelere göre oluşan sabit etkilerin kontrol edilmesi amacıyla
+    söz konusu değişkenlerin değerleri için ayrı ayrı kukla değişkenler oluşturulmuştur. Değişkenlerin kendi
+    aralarında karşılaştırma yapılabilmesi için her değişkenin bir değeri sabit alınmıştır. 
+
+    \end{justify}
+
+    \newpage
+    \subparagraph*{Analiz Sonuçları}
+    \begin{justify}
+    \setlength{\parindent}{0em}
+
+    Bu bölümde ilk olarak Suriyeli mültecilerin kayıtdışı emek gücü üzerinde nasıl bir etki
+    yarattığı analiz edilmiştir. Tablo 3 yerli kayıtdışı istihdam oranının cinsiyet ve eğitim seviyelerine
+    göre nasıl değiştiğini göstermektedir. Analiz sonuçlarına göre toplam ticaret göz ardı edildiğinde
+    kayıtdışı istihdam oranı \%2 civarında azalmaktadır. Bu sonuç toplam ticaret modele eklendiği 
+    zaman da çok değişmemektedir. Kayıtlı istihdam oranının cinsiyet bazında nasıl değiştiğine dair 
+    sonuçlar da Tablo 3'ten görülebilir. Buna göre Suriyeli mülteciler, kayıtdışı istihdamda kadınları,
+    erkeklere göre daha fazla etkilemiştir. Erkek kayıtdışı istihdam \%1,8 
+    azalma gösterirken, bu durum kadınlarda \%2,6 civarındadır. Eğitim gruplarına göre yapılan 
+    analizin sonuçlarına göre ise düşük eğitimli bireylerin kayıtdışı istihdam oranlarının \%3 civarında
+    azaldığı görülmektedir. Yüksek eğitim grubunda ise sonuçlar anlamsızdır. 
+    
+    Suriyeli mültecilerin Türkiye'de çalışma izni bulunmamaktadır ve ucuz emek arzı sağlamalarından dolayı niteliksiz 
+    işgücü ile ikame edilmişlerdir. Dolayısıyla mülteci etkisi en fazla kayıtdışı sektörlerde çalışan bireyleri 
+    etkilemektedir.
+    
+        \FloatBarrier
+        \begin{table}[h]
+            \centering
+            \caption{Kayıtsız İstihdam Oranı İçin Regresyon Sonuçları}
+            \begin{tabular}{|ccccccc|}
+                \hline
+                     & Toplam & Toplam & Erkek & Kadın & Düşük E. & Yüksek E. \\ \hline
+                    Mülteci Etkisi (RXT) & -0.0227*** & -0.0224*** & -0.0185*** & -0.0264*** & -0.0337*** & 0.00706 \\ 
+                     & (0.00280) & (0.00280) & (0.00442) & (0.00344) & (0.00338) & (0.00456) \\ 
+                    Log(Toplam Ticaret) & - & + & + & + & + & + \\ 
+                    Düzeltilmiş Yıl Etkisi & + & + & + & + & + & + \\ 
+                    Düzeltilmiş Bölge Etkisi & + & + & + & + & + & + \\ 
+                    Diğer Kontroller & + & + & + & + & + & + \\
+                    Sabit Terim & 0.0798*** & 0.426** & 0.913*** & 0.119 & 0.523** & -0.0588 \\ 
+                     & (0.00255) & (0.150) & (0.243) & (0.177) & (0.181) & (0.247) \\ 
+                    R & 0.129 & 0.129 & 0.101 & 0.125 & 0.129 & 0.053 \\ 
+                    Gözlem Sayısı & 354.023 & 354.023 & 171.017 & 183.006 & 270.608 & 83.415 \\ 
+                    \multicolumn{7}{|c|}{\scriptsize Güçlü standart hatalar parantez içinde verilmiştir.   * p<0.05, ** p<0.01, *** p<0.001}\\ \hline
+                    \multicolumn{7}{|c|}{\scriptsize Kontrol değişkeni olarak cinsiyet, medeni durum, yaş ve eğitim kukla değişkenleri, yaş ve eğitim değişkenlerinin etkileşim terimleri} \\ 
+                    \multicolumn{7}{|c|}{\scriptsize ayrıca bölgenin şehirleşme durumunu gösteren kukla değişken kullanılmıştır.} \\ \hline
+                    \multicolumn{7}{|c|}{\scriptsize Yüksek eğitim lise ve üstü eğitimi, düşük eğitim ise lise altı eğitimi ifade etmektedir.} \\ \hline
+
+                \end{tabular}
+        \end{table}
+        \FloatBarrier
+
+        Tablo 4, Suriyeli mülteci akımından dolayı bireylerin işgücüne katılımının nasıl değiştiğini
+        göstermektedir. Yerli emek piyasasında yer alan bireylerin işgücüne katılım oranı \%1 civarında 
+        azalmıştır. Bu oran kadınlarda \%2 civarında iken, erkeklerde sonuçlar anlamsız çıkmıştır. 
+        Ayrıca düşük eğitimli bireylerin işgücüne katılım oranlarında \%1,7 civarında bir düşüş söz konusudur.
+        Yüksek eğitim grubunda yer alan bireylerde ise herhangi bir etki görülmemiştir.
+
+
+        \FloatBarrier
+        \begin{table}[h]
+            \centering
+            \caption{İşgücüne Katılım Oranı İçin Regresyon Sonuçları}
+            \begin{tabular}{|ccccccc|}
+                \hline
+                     & Toplam & Toplam & Erkek & Kadın & Düşük E. & Yüksek E. \\ \hline
+                     Mülteci Etkisi (RXT) & -0.0110*** & -0.0117*** & 0.00431 & -0.0279*** & -0.0175*** & 0.00338    \\ 
+                     & (0.00283) & (0.00283) & (0.00379) & (0.00397) & (0.00323) & (0.00576)    \\ 
+                     Log(Toplam Ticaret) & - & + & + & + & + & + \\ 
+                    Düzeltilmiş Yıl Etkisi & + & + & + & + & + & + \\ 
+                    Düzeltilmiş Bölge Etkisi & + & + & + & + & + & + \\ 
+                    Diğer Kontroller & + & + & + & + & + & + \\
+                    Sabit Terim & 0.0412*** & -0.808*** & -0.992*** & -0.176 & -0.521** & -1.849*** \\ 
+                    & (0.00274) & (0.154) & (0.216) & (0.206) & (0.175) & (0.324)    \\ 
+                    R & 0.355 & 0.355 & 0.272 & 0.141 & 0.353 & 0.294    \\ 
+                    Gözlem Sayısı & 354.023 & 354.023 & 171.017 & 183.006 & 270.608 & 83.415 \\ \hline
+                    \multicolumn{7}{|c|}{\scriptsize Güçlü standart hatalar parantez içinde verilmiştir.   * p<0.05, ** p<0.01, *** p<0.001}\\ \hline
+                    \multicolumn{7}{|c|}{\scriptsize Kontrol değişkeni olarak cinsiyet, medeni durum, yaş ve eğitim kukla değişkenleri, yaş ve eğitim değişkenlerinin etkileşim terimleri} \\ 
+                    \multicolumn{7}{|c|}{\scriptsize ayrıca bölgenin şehirleşme durumunu gösteren kukla değişken kullanılmıştır.} \\ \hline
+                    \multicolumn{7}{|c|}{\scriptsize Yüksek eğitim lise ve üstü eğitimi, düşük eğitim ise lise altı eğitimi ifade etmektedir.} \\ \hline
+
+                \end{tabular}
+        \end{table}
+        \FloatBarrier
+
+        \newpage
+
+        Yerli emek piyasasında Suriyeli mültecilerin işsizlik oranlarında yarattığı etki Tablo 5'te
+        gösterilmektedir. Buna göre müdahale grubunda işsizlik oranları toplamda \%0,08 artmıştır.
+        Erkeklerde bu oran \%0,1 civarında iken kadınlarda ortaya çıkan sonuçlar anlamsızdır. Bu sonuç kadınların
+        büyük ölçüde emek piyasasından çıkması ile açıklanabilir. Düşük eğitim grubunda ise işsizlik 
+        oranı \%0,07, yüksek eğitim grubunda \%0,08 civarında artmıştır
+        \footnote{Makalede yüksek eğitimli işgücü grubunda işsizlik oranları istatiksel olarak anlamsız çıkmıştır.}. 
+        Suriyeli mültecilerin, niteliksiz işgücü ile ikame edilmesinden dolayı düşük eğitimli işgücünde işsizlik oranının 
+        artması beklenir bir sonuçtur.
+
+        \FloatBarrier
+        \begin{table}[h]
+            \centering
+            \caption{İşsizlik Oranı İçin Regresyon Sonuçları}
+            \begin{tabular}{|ccccccc|}
+                \hline
+                     & Toplam & Toplam & Erkek & Kadın & Düşük E. & Yüksek E. \\ \hline
+                     Mülteci Etkisi (RXT) & 0.00867*** & 0.00810*** & 0.0150*** & 0.00154 & 0.00774*** & 0.00836*   \\ 
+                     & (0.00141) & (0.00140) & (0.00255) & (0.00126) & (0.00149) & (0.00343)    \\ 
+                    Log(Toplam Ticaret) & - & + & + & + & + & + \\ 
+                    Düzeltilmiş Yıl Etkisi & + & + & + & + & + & + \\ 
+                    Düzeltilmiş Bölge Etkisi & + & + & + & + & + & + \\ 
+                    Diğer Kontroller & + & + & + & + & + & + \\
+                    Sabit Terim & 0.0305*** & -0.669*** & -1.213*** & -0.139* & -0.667*** & -0.770*** \\ 
+                    & (0.00139) & (0.0739) & (0.137) & (0.0613) & (0.0792) & (0.179)    \\
+                    R & 0.034 & 0.034 & 0.021 & 0.044 & 0.040 & 0.032    \\ 
+                    Gözlem Sayısı & 354.023 & 354.023 & 171.017 & 183.006 & 270.608 & 83.415 \\ \hline
+                    \multicolumn{7}{|c|}{\scriptsize Güçlü standart hatalar parantez içinde verilmiştir.   * p<0.05, ** p<0.01, *** p<0.001}\\ \hline
+                    \multicolumn{7}{|c|}{\scriptsize Kontrol değişkeni olarak cinsiyet, medeni durum, yaş ve eğitim kukla değişkenleri, yaş ve eğitim değişkenlerinin etkileşim terimleri} \\ 
+                    \multicolumn{7}{|c|}{\scriptsize ayrıca bölgenin şehirleşme durumunu gösteren kukla değişken kullanılmıştır.} \\ \hline
+                    \multicolumn{7}{|c|}{\scriptsize Yüksek eğitim lise ve üstü eğitimi, düşük eğitim ise lise altı eğitimi ifade etmektedir.} \\ \hline
+
+                \end{tabular}
+        \end{table}
+        \FloatBarrier
+
+        Suriyeli mültecilerin özellikle kayıtdışı alanda yerli emek gücü ile ikame edilebilir olması,
+        yerli işgücünün kayıtlı istihdama geçmesinde etkili olmuştur. Her ne kadar bu etki toplam işgücünde 
+        anlamsız çıksa da erkek çalışanlar için kayıtlı istihdamda yer alma oranı \%0,03 civarında artmıştır 
+        \footnote{Makalede yerel emek piyasasında kayıtlı istihdamda yer alma oranı istatiksel olarak anlamlıdır.}. 
+        Bu oran kadınlar için ise anlamsızdır. Yine bu durum kadınların emek piyasasından ayrılması ile açıklanabilir. 
+        Düşük eğitimli çalışanlarda ise bu oran \%0,08 civarındadır.
+        Yüksek eğitimli grup ise bundan etkilenmemiştir.
+
+
+        \FloatBarrier
+        \begin{table}[h]
+            \centering
+            \caption{Kayıtlı İstihdam Oranı İçin Regresyon Sonuçları}
+            \begin{tabular}{|ccccccc|}
+                \hline
+                    & Toplam & Toplam & Erkek & Kadın & Düşük E. & Yüksek E. \\ \hline
+                    Mülteci Etkisi (RXT) & 0.00380 & 0.00347 & 0.00825* & -0.00184 & 0.00858*** & -0.00908    \\ 
+                    & (0.00226) & (0.00227) & (0.00399) & (0.00202) & (0.00226) & (0.00618)    \\ 
+                    Log(Toplam Ticaret) & - & + & + & + & + & + \\ 
+                    Düzeltilmiş Yıl Etkisi & + & + & + & + & + & + \\ 
+                    Düzeltilmiş Bölge Etkisi & + & + & + & + & + & + \\ 
+                    Diğer Kontroller & + & + & + & + & + & + \\
+                    Sabit Terim & -0.0751*** & -0.478*** & -0.553* & -0.116 & -0.301* & -0.894**  \\ 
+                    & (0.00188) & (0.124) & (0.219) & (0.108) & (0.123) & (0.345)    \\ 
+                    R & 0.305 & 0.305 & 0.273 & 0.218 & 0.176 & 0.247    \\ 
+                    Gözlem Sayısı & 354.023 & 354.023 & 171.017 & 183.006 & 270.608 & 83.415 \\ \hline
+                    \multicolumn{7}{|c|}{\scriptsize Güçlü standart hatalar parantez içinde verilmiştir.   * p<0.05, ** p<0.01, *** p<0.001}\\ \hline
+                    \multicolumn{7}{|c|}{\scriptsize Kontrol değişkeni olarak cinsiyet, medeni durum, yaş ve eğitim kukla değişkenleri, yaş ve eğitim değişkenlerinin etkileşim terimleri} \\ 
+                    \multicolumn{7}{|c|}{\scriptsize ayrıca bölgenin şehirleşme durumunu gösteren kukla değişken kullanılmıştır.} \\ \hline
+                    \multicolumn{7}{|c|}{\scriptsize Yüksek eğitim lise ve üstü eğitimi, düşük eğitim ise lise altı eğitimi ifade etmektedir.} \\ \hline
+
+                \end{tabular}
+        \end{table}
+        \FloatBarrier
+
+        \newpage
+
+        Tablo 7, müdahale grubunda Suriyeli mültecilerden dolayı işten ayrılma oranlarında nasıl bir 
+        değişim yaşandığını göstermektedir. Beklenilenilenin aksine işten ayrılma olasılığı \%0,04 gibi düşük bir oranda 
+        olsa da artış göstermiştir
+        \footnote{Makalede işten ayrılma olasılıkları her grupta anlamsız çıkmıştır.}. 
+        İşten ayrılma olasılığı erkeklerde \%0,05 artış gösterirken kadınlarda bu oran anlamsızdır.
+        Düşük eğitim grubunda işten ayrılma olasığı \%0,06 artarken, yüksek eğitim grubunda herhangi bir etki görülmemektedir. 
+
+
+        \FloatBarrier
+        \begin{table}[h]
+            \centering
+            \caption{İşten Ayrılma Olasılığı İçin Regresyon Sonuçları}
+            \begin{tabular}{|ccccccc|}
+                \hline
+                     & Toplam & Toplam & Erkek & Kadın & Düşük E. & Yüksek E. \\ \hline
+                     Mülteci Etkisi (RXT) & 0.00469* & 0.00459* & 0.00504* & 0.00299 & 0.00674** & -0.000107 \\ 
+                     & (0.00190) & (0.00189) & (0.00239) & (0.00288) & (0.00233) & (0.00327) \\ 
+                    Log(Toplam Ticaret) & - & + & + & + & + & + \\ 
+                    Düzeltilmiş Yıl Etkisi & + & + & + & + & + & + \\ 
+                    Düzeltilmiş Bölge Etkisi & + & + & + & + & + & + \\ 
+                    Diğer Kontroller & + & + & + & + & + & + \\
+                    Sabit Terim & 0.0545*** & -0.153 & -0.204 & 0.0255 & -0.147 & -0.175 \\ 
+                    & (0.00293) & (0.105) & (0.132) & (0.147) & (0.130) & (0.176) \\ 
+                    R & 0.016 & 0.016 & 0.014 & 0.029 & 0.018 & 0.017 \\ 
+                    Gözlem Sayısı & 136.824 & 136.824 & 100.549 & 36.275 & 93.536 & 43.288 \\ \hline
+                    \multicolumn{7}{|c|}{\scriptsize Güçlü standart hatalar parantez içinde verilmiştir.   * p<0.05, ** p<0.01, *** p<0.001}\\ \hline
+                    \multicolumn{7}{|c|}{\scriptsize Kontrol değişkeni olarak cinsiyet, medeni durum, yaş ve eğitim kukla değişkenleri, yaş ve eğitim değişkenlerinin etkileşim terimleri} \\ 
+                    \multicolumn{7}{|c|}{\scriptsize ayrıca bölgenin şehirleşme durumunu gösteren kukla değişken kullanılmıştır.} \\ \hline
+                    \multicolumn{7}{|c|}{\scriptsize Yüksek eğitim lise ve üstü eğitimi, düşük eğitim ise lise altı eğitimi ifade etmektedir.} \\ \hline
+                    \multicolumn{7}{|c|}{\scriptsize Örneklem, yerli nüfus içinde referans yılından bir önceki yıl istihdamda olan bireyleri kapsamaktadır.} \\ \hline
+
+                \end{tabular}
+        \end{table}
+        \FloatBarrier
+
+        Mültecilerin yerel emek piyasasında iş bulma oranlarını nasıl etkilediği Tablo 8'de görülmektedir.
+        Buna göre toplam yerli işgücünde iş bulma olasılığı \%4,5 civarında azalmıştır. Bu oran erkekler için
+        \%4,2 düşüş gösterirken kadınlar için anlamsız çıkmıştır. Düşük eğitimli bireylerde ise iş bulma olasılığı
+        \%6 civarında azalmıştır. Yüksek eğitimli bireylerde ise herhangi bir etki görülmemiştir.
+
+        \FloatBarrier
+        \begin{table}[h]
+            \centering
+            \caption{İş Bulma Olasılığı İçin Regresyon Sonuçları}
+            \begin{tabular}{|ccccccc|}
+                \hline
+                     & Toplam & Toplam & Erkek & Kadın & Düşük E. & Yüksek E. \\ \hline
+                     Mülteci Etkisi (RXT) & -0.0460*** & -0.0458*** & -0.0427** & -0.0615 & -0.0661*** & 0.0157 \\ 
+                     & (0.0122) & (0.0122) & (0.0130) & (0.0352) & (0.0143) & (0.0239) \\
+                    Log(Toplam Ticaret) & - & + & + & + & + & + \\ 
+                    Düzeltilmiş Yıl Etkisi & + & + & + & + & + & + \\ 
+                    Düzeltilmiş Bölge Etkisi & + & + & + & + & + & + \\ 
+                    Diğer Kontroller & + & + & + & + & + & + \\
+                    Sabit Terim & 0.358*** & 0.449 & 0.349 & 3417 & 0.136 & 0.388 \\ 
+                    & (0.0131) & (0.663) & (0.697) & -2157 & (0.765) & -1353 \\ 
+                    R & 0.044 & 0.044 & 0.047 & 0.050 & 0.044 & 0.055 \\ 
+                    Gözlem Sayısı & 29.330 & 29.330 & 25.958 & 3.372 & 21.958 & 7.372 \\ \hline
+                    \multicolumn{7}{|c|}{\scriptsize Güçlü standart hatalar parantez içinde verilmiştir.   * p<0.05, ** p<0.01, *** p<0.001}\\ \hline
+                    \multicolumn{7}{|c|}{\scriptsize Kontrol değişkeni olarak cinsiyet, medeni durum, yaş ve eğitim kukla değişkenleri, yaş ve eğitim değişkenlerinin etkileşim terimleri} \\ 
+                    \multicolumn{7}{|c|}{\scriptsize ayrıca bölgenin şehirleşme durumunu gösteren kukla değişken kullanılmıştır.} \\ \hline
+                    \multicolumn{7}{|c|}{\scriptsize Yüksek eğitim lise ve üstü eğitimi, düşük eğitim ise lise altı eğitimi ifade etmektedir.} \\ \hline
+                    \multicolumn{7}{|c|}{\scriptsize Örneklem, yerli nüfus içinde referans yılından bir önceki yıl istihdamda yer almayan bireyleri kapsamaktadır.} \\ \hline
+
+                \end{tabular}
+        \end{table}
+        \FloatBarrier
+
+        \newpage
+
+        Mülteci etkisinin yaş gruplarına göre emek piyasasında nasıl bir etki yarattığı Tablo 9'da özet 
+        halinde gösterilmiştir. Özellikle 35 yaş altı bireyler kayıtdışı işlerini kaybetmiş, işgücünden ayrılmış ya da 
+        işsiz kalmışlardır. 
+        \FloatBarrier
+        \begin{table}[h]
+            \centering
+            \caption{Yaş Gruplarına Göre Mülteci Etkisi}
+            \begin{tabular}{|ccccccc|}
+                \hline
+                    
+                & 15-24 & 25-34 & 35-44 & 45-54 & 55-64 & Toplam \\ \hline
+                LFP & -0.00456 & -0.0233*** & -0.00916 & -0.0112 & -0.00632 & -0.0117*** \\ 
+                 & (0.00544) & (0.00546) & (0.00573) & (0.00705) & (0.0101) & (0.00283)    \\ 
+                U/P & 0.0114*** & 0.0162*** & 0.00526 & -0.00326 & 0.00215 & 0.00810*** \\ 
+                 & (0.00275) & (0.00339) & (0.00306) & (0.00296) & (0.00255) & (0.00140)    \\ 
+                IE/P & -0.0199*** & -0.0264*** & -0.0280*** & -0.00716 & -0.0203* & -0.0224*** \\ 
+                 & (0.00486) & (0.00570) & (0.00643) & (0.00742) & (0.00958) & (0.00280)    \\ 
+                FE/P & 0.00379 & -0.0113* & 0.0148** & 0.000458 & 0.0131* & 0.00347 \\ 
+                 & (0.00303) & (0.00536) & (0.00551) & (0.00613) & (0.00645) & (0.00227) \\ 
+                SP & 0.00717 & 0.00870* & 0.00337 & 0.000267 & 0.00127 & 0.00459* \\ 
+                 & (0.00638) & (0.00398) & (0.00332) & (0.00340) & (0.00395) & (0.00189) \\ 
+                JFP & -0.0671** & -0.0292 & -0.0218 & -0.0387 & -0.0438 & -0.0458*** \\ 
+                 & (0.0208) & (0.0219) & (0.0286) & (0.0364) & (0.0689) & (0.0122)    \\ \hline
+                   
+                    \multicolumn{7}{|c|}{\scriptsize Güçlü standart hatalar parantez içinde verilmiştir.   * p<0.05, ** p<0.01, *** p<0.001}\\ \hline
+                    
+                \end{tabular}
+        \end{table}
+        \FloatBarrier
+
+        Mülteci akımının kayıtlı çalışanların ücretleri üzerinde nasıl bir etki yarattığı Tablo 10'dan görülebilir.
+        Analiz sonuçlarına göre mülteci akımı kayıtlı çalışanların ücretlerine, yüksek eğitimli bireyler haricinde
+        herhangi bir etkide bulunmamıştır. Yüksek eğitimli çalışanların ücretlerindeki \%2'lik artış,
+        müdahale bölgesinde mülteciler için yürütülen faaliyetlerle ilişkilendirilebilir.
+
+        \FloatBarrier
+        \begin{table}[h]
+            \centering
+            \caption{Kayıtlı Çalışan Aylık Ücret Geliri için Regresyon Sonuçları}
+            \begin{tabular}{|ccccccc|}
+                \hline
+                     & Toplam & Toplam & Erkek & Kadın & Düşük E. & Yüksek E. \\ \hline
+                     Mülteci Etkisi (RXT) & 0.0119 & 0.0141 & 0.0143 & 0.0162 & -0.00181 & 0.0262*   \\ 
+                     & (0.00707) & (0.00811) & (0.00889) & (0.0191) & (0.0116) & (0.0109)    \\
+                    Log(Toplam Ticaret) & - & + & + & + & + & + \\ 
+                    Düzeltilmiş Yıl Etkisi & + & + & + & + & + & + \\ 
+                    Düzeltilmiş Bölge Etkisi & + & + & + & + & + & + \\ 
+                    Diğer Kontroller & + & + & + & + & + & + \\
+                    Sabit Terim & 5.624*** & 5.079*** & 4.799*** & 6.429*** & 3.925*** & 5.577*** \\ 
+                    & (0.0333) & (0.446) & (0.488) & -1066 & (0.605) & (0.603)    \\ 
+                    R & 0.563 & 0.428 & 0.427 & 0.473 & 0.338 & 0.305    \\ 
+                    Gözlem Sayısı & 52.689 & 52.689 & 42.928 & 9.761 & 20.606 & 32.083 \\ \hline
+                    \multicolumn{7}{|c|}{\scriptsize Güçlü standart hatalar parantez içinde verilmiştir.   * p<0.05, ** p<0.01, *** p<0.001}\\ \hline
+                    \multicolumn{7}{|c|}{\scriptsize Kontrol değişkeni olarak cinsiyet, medeni durum, yaş ve eğitim kukla değişkenleri, yaş ve eğitim değişkenlerinin etkileşim terimleri} \\ 
+                    \multicolumn{7}{|c|}{\scriptsize ayrıca bölgenin şehirleşme durumunu gösteren kukla, bireylerin full-time çalışıp çalışmadığını gösteren kukla değişken,} \\
+                    \multicolumn{7}{|c|}{\scriptsize firma büyüklüğü kukla değişkenleri ve sektör kukla değişkenleri kullanılmıştır. } \\ \hline
+                    \multicolumn{7}{|c|}{\scriptsize Yüksek eğitim lise ve üstü eğitimi, düşük eğitim ise lise altı eğitimi ifade etmektedir.} \\ \hline
+                    \multicolumn{7}{|c|}{\scriptsize Örneklem, yerli nüfus içinde referans yılında kayıtlı istihdamda yer alan ücretli çalışanları kapsamaktadır.} \\ \hline
+
+                \end{tabular}
+        \end{table}
+        \FloatBarrier    
+
+
+
+
+
+
+
+
+
+    \end{justify}
+
+
+
+
+\end{document}
